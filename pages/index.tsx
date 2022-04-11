@@ -1,6 +1,7 @@
 
 import {FC, useEffect, useState} from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 
 const Home : FC = () => {
@@ -34,6 +35,14 @@ const Home : FC = () => {
     return(
 
         <main className="min-h-screen max-w-screen bg-dark-blue flex justify-center items-center">
+            <Head>
+
+                <html lang="en"/>
+                <meta name="theme-color" content="#221d52"/>
+                <title>Advice Generator</title>
+                <link rel="icon" href="/images/favicon.png"/>
+
+            </Head>
             
             <article className="relative flex flex-col mx-6 my-4 justify-between items-center max-w-xl w-full sm:w-1/2 lg:w-1/3 h-auto min-h-72 
              bg-grayish-darkblue rounded-2xl p-8 text-center ">
